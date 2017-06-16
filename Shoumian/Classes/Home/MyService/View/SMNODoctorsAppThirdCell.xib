@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SMNODoctorsAppThirdCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor_a" translatesAutoresizingMaskIntoConstraints="NO" id="a8n-ut-7sB">
+                        <rect key="frame" x="10" y="15" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="KyX-ru-wpa"/>
+                            <constraint firstAttribute="height" constant="60" id="TXh-d1-p9l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="程佳文" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mv-Um-WBp">
+                        <rect key="frame" x="85" y="15" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资深整形医生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu1-FU-oxK">
+                        <rect key="frame" x="141" y="18.5" width="74" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热卖项目：韩式双眼皮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRv-a1-ygj">
+                        <rect key="frame" x="85" y="45" width="133" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好评率：92%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dq-V3-k47">
+                        <rect key="frame" x="85" y="72" width="79.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUD-wY-G6S">
+                        <rect key="frame" x="332.5" y="9.5" width="30" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="查看">
+                            <color key="titleColor" red="1" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mu1-FU-oxK" firstAttribute="leading" secondItem="2mv-Um-WBp" secondAttribute="trailing" constant="10" id="3V1-JP-ftR"/>
+                    <constraint firstItem="RRv-a1-ygj" firstAttribute="leading" secondItem="2mv-Um-WBp" secondAttribute="leading" id="DIF-np-IfR"/>
+                    <constraint firstItem="a8n-ut-7sB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="DOn-dR-zt2"/>
+                    <constraint firstItem="2mv-Um-WBp" firstAttribute="leading" secondItem="a8n-ut-7sB" secondAttribute="trailing" constant="15" id="Ly8-ZB-1Ic"/>
+                    <constraint firstItem="0dq-V3-k47" firstAttribute="leading" secondItem="RRv-a1-ygj" secondAttribute="leading" id="OVP-Io-EVh"/>
+                    <constraint firstItem="mu1-FU-oxK" firstAttribute="bottom" secondItem="2mv-Um-WBp" secondAttribute="bottom" id="Oq2-V6-se7"/>
+                    <constraint firstItem="RRv-a1-ygj" firstAttribute="top" secondItem="2mv-Um-WBp" secondAttribute="bottom" constant="12" id="VaC-Qv-mbS"/>
+                    <constraint firstItem="a8n-ut-7sB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Zd1-TW-Nxo"/>
+                    <constraint firstItem="0dq-V3-k47" firstAttribute="top" secondItem="RRv-a1-ygj" secondAttribute="bottom" constant="11" id="axl-sO-fmN"/>
+                    <constraint firstItem="2mv-Um-WBp" firstAttribute="top" secondItem="a8n-ut-7sB" secondAttribute="top" id="chO-gf-cpj"/>
+                    <constraint firstItem="NUD-wY-G6S" firstAttribute="centerY" secondItem="2mv-Um-WBp" secondAttribute="centerY" id="p7P-zq-9cd"/>
+                    <constraint firstAttribute="trailing" secondItem="NUD-wY-G6S" secondAttribute="trailing" constant="12.5" id="zws-bj-b5d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doctor_a" width="60" height="60"/>
+    </resources>
+</document>

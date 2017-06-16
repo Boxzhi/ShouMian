@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="442" id="KGk-i7-Jjw" customClass="SMHomeOneCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="442"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="si8-Xd-NC9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="137" id="p3u-eV-HbH"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="SaP-ZH-MGY">
+                        <rect key="frame" x="0.0" y="152" width="375" height="137"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="137" id="T5w-zY-pkh"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="NO4-4o-lwr">
+                        <rect key="frame" x="0.0" y="304" width="375" height="137.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="si8-Xd-NC9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1DI-fX-eeA"/>
+                    <constraint firstItem="si8-Xd-NC9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="44V-yS-fIJ"/>
+                    <constraint firstItem="SaP-ZH-MGY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JzH-MQ-3rs"/>
+                    <constraint firstItem="NO4-4o-lwr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MOb-aq-dEp"/>
+                    <constraint firstAttribute="trailing" secondItem="SaP-ZH-MGY" secondAttribute="trailing" id="Md6-1S-izv"/>
+                    <constraint firstAttribute="trailing" secondItem="NO4-4o-lwr" secondAttribute="trailing" id="Tfi-Hd-0FK"/>
+                    <constraint firstAttribute="bottom" secondItem="NO4-4o-lwr" secondAttribute="bottom" id="cFh-ys-cGY"/>
+                    <constraint firstAttribute="trailing" secondItem="si8-Xd-NC9" secondAttribute="trailing" id="dxO-Pl-Hw7"/>
+                    <constraint firstItem="NO4-4o-lwr" firstAttribute="top" secondItem="SaP-ZH-MGY" secondAttribute="bottom" constant="15" id="l0R-fB-raD"/>
+                    <constraint firstItem="SaP-ZH-MGY" firstAttribute="top" secondItem="si8-Xd-NC9" secondAttribute="bottom" constant="15" id="lQL-Fj-Iuz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="45" y="17"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1" width="560" height="205"/>
+        <image name="2" width="561" height="203"/>
+        <image name="3" width="561" height="207"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZBB-c8-7FD" customClass="SMChatCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZBB-c8-7FD" id="QlQ-WW-HMP">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_doctor_a" translatesAutoresizingMaskIntoConstraints="NO" id="Sjn-si-UTO">
+                        <rect key="frame" x="12.5" y="20" width="49" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="aY3-ET-F3i"/>
+                            <constraint firstAttribute="height" constant="49" id="dIy-vh-fNo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李艳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rA-mv-1Kw">
+                        <rect key="frame" x="74.5" y="24" width="33" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们的用户基本上没有说反馈有后遗症的。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0C-wS-PQs">
+                        <rect key="frame" x="74.5" y="53.5" width="288" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11月22日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNC-jf-x54">
+                        <rect key="frame" x="308" y="26" width="54.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJp-sd-ov1">
+                        <rect key="frame" x="0.0" y="87" width="375" height="0.5"/>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="JGA-nY-xTL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cJp-sd-ov1" secondAttribute="bottom" id="0bj-Zl-FoO"/>
+                    <constraint firstItem="5rA-mv-1Kw" firstAttribute="top" secondItem="Sjn-si-UTO" secondAttribute="top" constant="4" id="MZE-UQ-QXW"/>
+                    <constraint firstAttribute="trailing" secondItem="tNC-jf-x54" secondAttribute="trailing" constant="12.5" id="TLx-Op-aa8"/>
+                    <constraint firstItem="cJp-sd-ov1" firstAttribute="leading" secondItem="QlQ-WW-HMP" secondAttribute="leading" id="U7b-3z-XZK"/>
+                    <constraint firstItem="Sjn-si-UTO" firstAttribute="leading" secondItem="QlQ-WW-HMP" secondAttribute="leading" constant="12.5" id="X3b-ix-srb"/>
+                    <constraint firstItem="Sjn-si-UTO" firstAttribute="top" secondItem="QlQ-WW-HMP" secondAttribute="top" constant="20" id="Y9Y-N4-Jre"/>
+                    <constraint firstAttribute="trailing" secondItem="cJp-sd-ov1" secondAttribute="trailing" id="Zao-ay-vR8"/>
+                    <constraint firstAttribute="trailing" secondItem="P0C-wS-PQs" secondAttribute="trailing" constant="12.5" id="hEk-Id-5G0"/>
+                    <constraint firstItem="5rA-mv-1Kw" firstAttribute="leading" secondItem="Sjn-si-UTO" secondAttribute="trailing" constant="13" id="rpz-Ve-Zmh"/>
+                    <constraint firstItem="tNC-jf-x54" firstAttribute="centerY" secondItem="5rA-mv-1Kw" secondAttribute="centerY" id="s24-0i-GgL"/>
+                    <constraint firstItem="P0C-wS-PQs" firstAttribute="top" secondItem="5rA-mv-1Kw" secondAttribute="bottom" constant="10" id="tp7-lG-Bdg"/>
+                    <constraint firstItem="P0C-wS-PQs" firstAttribute="leading" secondItem="5rA-mv-1Kw" secondAttribute="leading" id="wrw-Sc-6l6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="news_doctor_a" width="49" height="49"/>
+    </resources>
+</document>

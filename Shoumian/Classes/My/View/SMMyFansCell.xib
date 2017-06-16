@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SMMyFansCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_yonghu_q" translatesAutoresizingMaskIntoConstraints="NO" id="lkP-0j-MuM">
+                        <rect key="frame" x="12.5" y="20" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="XIF-kI-IBS"/>
+                            <constraint firstAttribute="width" constant="60" id="drb-QO-bZL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="折月煮酒的幽子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS4-IO-rNS">
+                        <rect key="frame" x="82.5" y="25.5" width="210" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-HQ-ClG">
+                        <rect key="frame" x="302.5" y="35" width="60" height="30"/>
+                        <color key="backgroundColor" red="0.80003464221954346" green="0.80001723766326904" blue="0.80002075433731079" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="CJJ-bH-6Lh"/>
+                            <constraint firstAttribute="width" constant="60" id="Qpj-ZV-U5G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="已关注">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你是我的风景。相识，总是那么美丽。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRk-px-ijw">
+                        <rect key="frame" x="82.5" y="56.5" width="210" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKB-pT-X4y">
+                        <rect key="frame" x="82.5" y="84.5" width="67" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fgC-xf-o2n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title=" 1023帖" image="my_tiezi">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLB-ay-Jae">
+                        <rect key="frame" x="177.5" y="84" width="53" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="TqO-Om-4Ff"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title=" 42记" image="my_diary">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2I-ka-EN1" customClass="SMLabelButton">
+                        <rect key="frame" x="82" y="117.5" width="68" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="mE7-UP-EHD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="  鼻子综合  ">
+                            <color key="titleColor" red="0.50196078430000002" green="0.59999999999999998" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eer-M2-Q5G" customClass="SMLabelButton">
+                        <rect key="frame" x="156" y="117" width="68" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6kK-pt-6Og"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="  眼部整形  ">
+                            <color key="titleColor" red="0.50196078430000002" green="0.59999999999999998" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y2I-ka-EN1" firstAttribute="top" secondItem="EKB-pT-X4y" secondAttribute="bottom" constant="13" id="2nV-ce-lDI"/>
+                    <constraint firstItem="lkP-0j-MuM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="7JQ-Xp-2fQ"/>
+                    <constraint firstItem="Eer-M2-Q5G" firstAttribute="leading" secondItem="y2I-ka-EN1" secondAttribute="trailing" constant="6" id="8IK-yd-o5U"/>
+                    <constraint firstItem="EKB-pT-X4y" firstAttribute="top" secondItem="HRk-px-ijw" secondAttribute="bottom" constant="11" id="9Ba-cs-1pi"/>
+                    <constraint firstItem="Eer-M2-Q5G" firstAttribute="centerY" secondItem="y2I-ka-EN1" secondAttribute="centerY" id="FGH-Dt-4ma"/>
+                    <constraint firstItem="Zvv-HQ-ClG" firstAttribute="centerY" secondItem="lkP-0j-MuM" secondAttribute="centerY" id="I7t-SK-5wN"/>
+                    <constraint firstItem="sLB-ay-Jae" firstAttribute="centerY" secondItem="EKB-pT-X4y" secondAttribute="centerY" id="LmT-6I-uCJ"/>
+                    <constraint firstItem="Zvv-HQ-ClG" firstAttribute="leading" secondItem="wS4-IO-rNS" secondAttribute="trailing" constant="10" id="NMZ-Lb-Z8c"/>
+                    <constraint firstItem="lkP-0j-MuM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12.5" id="Olv-Vs-OJJ"/>
+                    <constraint firstItem="HRk-px-ijw" firstAttribute="leading" secondItem="wS4-IO-rNS" secondAttribute="leading" id="S1X-cE-myA"/>
+                    <constraint firstItem="sLB-ay-Jae" firstAttribute="leading" secondItem="EKB-pT-X4y" secondAttribute="trailing" constant="28" id="U8I-lm-7On"/>
+                    <constraint firstItem="EKB-pT-X4y" firstAttribute="leading" secondItem="wS4-IO-rNS" secondAttribute="leading" id="VFE-IS-v4U"/>
+                    <constraint firstItem="wS4-IO-rNS" firstAttribute="centerY" secondItem="lkP-0j-MuM" secondAttribute="centerY" constant="-15" id="VbA-yA-4Me"/>
+                    <constraint firstItem="wS4-IO-rNS" firstAttribute="leading" secondItem="lkP-0j-MuM" secondAttribute="trailing" constant="10" id="d3U-3T-3Dq"/>
+                    <constraint firstItem="HRk-px-ijw" firstAttribute="trailing" secondItem="wS4-IO-rNS" secondAttribute="trailing" id="gxx-tZ-yvk"/>
+                    <constraint firstAttribute="trailing" secondItem="Zvv-HQ-ClG" secondAttribute="trailing" constant="12.5" id="l7N-KH-6MJ"/>
+                    <constraint firstItem="HRk-px-ijw" firstAttribute="centerY" secondItem="lkP-0j-MuM" secondAttribute="centerY" constant="15" id="niN-yT-50T"/>
+                    <constraint firstItem="y2I-ka-EN1" firstAttribute="leading" secondItem="EKB-pT-X4y" secondAttribute="leading" id="rc1-pC-ckV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="followButton" destination="Zvv-HQ-ClG" id="x1A-hR-fkr"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="my_diary" width="20" height="20"/>
+        <image name="my_tiezi" width="20" height="20"/>
+        <image name="my_yonghu_q" width="60" height="60"/>
+    </resources>
+</document>

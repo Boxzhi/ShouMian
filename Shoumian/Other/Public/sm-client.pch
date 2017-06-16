@@ -1,0 +1,265 @@
+//
+//  sm-client.pch
+//  Shoumian
+//
+//  Created by 何志志 on 2017/1/19.
+//  Copyright © 2017年 何志志. All rights reserved.
+//
+
+#ifndef sm_client_pch
+#define sm_client_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "SMBaseViewController.h"
+#import "UIView+Frame.h"
+#import <HYBHelperKit/HYBHelperKit.h>
+#import <WMPageController/WMPageController.h>
+#import "UIButton+ImageTitleSpacing.h"
+#import "UIBarButtonItem+Item.h"
+#import "SMGlobeConst.h"
+#import "HZZClassifyMenuView.h"
+#import "HZZButton.h"
+#import "UIView+HZZAddForRoundedCorner.h"
+#import <ZYKeyboardUtil/ZYKeyboardUtil.h>
+#import "NSString+AttributeString.h"
+
+/*自定义Log*/
+#define SMFunc SMLog(@"%s",__func__)
+// 调试
+#ifdef DEBUG
+#define CHANNEL             @"Test"
+#define SMLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+// 发布
+#define SMLog(...)
+#define CHANNEL             @"AppStore"
+#endif
+
+// 置换Token的单例
+#define SMTokenToolShared [ZMCTokenTool shared]
+
+// 屏幕宽高
+#define S_Width ([UIScreen mainScreen].bounds.size.width)
+#define S_Height ([UIScreen mainScreen].bounds.size.height)
+#define Reality_Height(height) (height * S_Width / 375);
+//#define Reality_Height5(height) (height * S_Height / 568);
+//#define Reality_Height6(height) (height * S_Height / 667);
+//#define Reality_Height6P(height) (height * S_Height / 736);
+
+// 机型判断
+#define iPhone5 (S_Height == 568)
+#define iPhone6 (S_Height == 667)
+#define iPhone6p (S_Height == 736)
+
+// 十六进制颜色转UIColor
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+// 获得RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+// 普遍使用的文字颜色
+#define UIColorBlue UIColorFromRGB(0xc8d3e8)
+#define UIColorRed UIColorFromRGB(0xff5050)
+#define UIColor333 UIColorFromRGB(0x333333)
+#define UIColor666 UIColorFromRGB(0x666666)
+#define UIColor999 UIColorFromRGB(0x999999)
+#define ViewBackgroundColor UIColorFromRGB(0xf8f8f8)
+#define LineViewBackgroundColor RGB(222, 223, 224)
+
+
+// 警告框
+#define ShowAlert(title,msg)  [[[UIAlertView alloc] initWithTitle:title message:msg delegate:nil cancelButtonTitle:@"我知道了" otherButtonTitles:nil, nil] show];
+
+// NSUserDefaults 实例化
+#define USER_DEFAULT  [NSUserDefaults standardUserDefaults]
+// 存储对象
+#define UserDefaultSetObjectForKey(__VALUE__,__KEY__) \
+{\
+[USER_DEFAULT setObject:__VALUE__ forKey:__KEY__];\
+[USER_DEFAULT synchronize];\
+}
+// 获得存储的对象
+#define UserDefaultObjectForKey(__KEY__)  [USER_DEFAULT objectForKey:__KEY__]
+// 删除对象
+#define UserDefaultRemoveObjectForKey(__KEY__) \
+{\
+[USER_DEFAULT removeObjectForKey:__KEY__];\
+[USER_DEFAULT synchronize];\
+}
+
+#define SMSEARCH_SEARCH_HISTORY_CACHE_PATH [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"SMSearchhistories.plist"] // 搜索历史存储路径
+
+// 登陆状态
+#define Login @"Login"
+#define ISLOGIN [UserDefaultObjectForKey(Login) isEqualToString:@"1"]
+
+// 判断是否为V以上系统
+#define IOS(V) [[[UIDevice currentDevice] systemVersion] floatValue] >= V
+
+// App版本号
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary]objectForKey:@"CFBundleShortVersionString"]
+
+/**
+ *  判断系统版本
+ */
+/** 系统版本号 */
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+/** 是否为iOS7 */
+#define iOS7 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) ? YES : NO)
+/** 是否为iOS8 */
+#define iOS8 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) ? YES : NO)
+/** 是否为iOS9 */
+#define iOS9 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) ? YES : NO)
+
+// 设置View圆角和边框
+#define ZMCViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+// 设置View圆角
+#define ZMCViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
+
+// View 坐标(x,y)和宽高(width,height)
+#define ViewxPos(v)                 (v).frame.origin.x
+#define ViewyPos(v)                 (v).frame.origin.y
+#define ViewWidth(v)                (v).frame.size.width
+#define ViewHeight(v)               (v).frame.size.height
+
+#define MinFrameX(v)                 CGRectGetMinX((v).frame)
+#define MinFrameY(v)                 CGRectGetMinY((v).frame)
+
+#define MidFrameX(v)                 CGRectGetMidX((v).frame)
+#define MidFrameY(v)                 CGRectGetMidY((v).frame)
+
+#define MaxFrameX(v)                 CGRectGetMaxX((v).frame)
+#define MaxFrameY(v)                 CGRectGetMaxY((v).frame)
+
+
+// 设置图片
+#define IMAGENAMED(NAME) [UIImage imageNamed:NAME]
+
+// 读取本地图片
+#define Load_Image(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
+
+// 字体大小
+#define FONTSIZE(SIZE) [UIFont systemFontOfSize:SIZE]
+
+// 强弱引用
+#define WeakTy(type)  __weak typeof(type) weak##type = type;
+#define StrongTy(type)  __strong typeof(type) type = weak##type;
+#define SMWeakSelf __weak typeof(self) weakSelf = self;
+
+// 获得主Window
+#define SMKeyWindow [UIApplication sharedApplication].keyWindow
+
+// 提示Toast
+#define ZMCToast(str)  CSToastStyle *style = [[CSToastStyle alloc] initWithDefaultStyle]; \
+[SMKeyWindow  makeToast:str duration:1.5 position:CSToastPositionCenter style:style];\
+SMKeyWindow.userInteractionEnabled = NO; \
+dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{\
+SMKeyWindow.userInteractionEnabled = YES;\
+});\
+
+/**
+ *  获取文件路径
+ */
+#define Path_Temp NSTemporaryDirectory()  // 获取temp
+#define Path_Document [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]  // 获取沙盒 Document
+#define Path_Cache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]   // 获取沙盒 Cache
+
+/**
+ *  GCD宏定义
+ */
+//GCD - 一次性执行
+#define DISPATCH_ONCE_BLOCK(onceBlock) static dispatch_once_t onceToken; dispatch_once(&onceToken, onceBlock);
+//GCD - 在Main线程上运行
+#define DISPATCH_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
+//GCD - 开启异步线程
+#define DISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlocl);
+
+
+#endif
+
+/**
+ *  单例
+ */
+#define SingleH(name) +(instancetype)share##name;
+
+#if __has_feature(objc_arc)
+//ARC
+#define SingleM(name) static id _instance;\
+\
++(instancetype)allocWithZone:(struct _NSZone *)zone\
+{\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+_instance = [super allocWithZone:zone];\
+});\
+return _instance;\
+}\
+\
++(instancetype)share##name\
+{\
+return [[self alloc]init];\
+}\
+\
+-(id)copyWithZone:(NSZone *)zone\
+{\
+return _instance;\
+}\
+\
+-(id)mutableCopyWithZone:(NSZone *)zone\
+{\
+return _instance;\
+}
+#else
+//MRC
+#define SingleM(name) static id _instance;\
+\
++(instancetype)allocWithZone:(struct _NSZone *)zone\
+{\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+_instance = [super allocWithZone:zone];\
+});\
+return _instance;\
+}\
+\
++(instancetype)share##name\
+{\
+return [[self alloc]init];\
+}\
+\
+-(id)copyWithZone:(NSZone *)zone\
+{\
+return _instance;\
+}\
+\
+-(id)mutableCopyWithZone:(NSZone *)zone\
+{\
+return _instance;\
+}\
+-(oneway void)release\
+{\
+}\
+-(instancetype)retain\
+{\
+return _instance;\
+}\
+\
+-(NSUInteger)retainCount\
+{\
+return MAXFLOAT;\
+}
+
+
+
+#endif /* sm_client_pch */

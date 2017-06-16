@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SMReservationInformationController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_icon_success" translatesAutoresizingMaskIntoConstraints="NO" id="kWv-iC-0LT">
+                    <rect key="frame" x="156" y="31" width="63" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="Ltk-y3-ejq"/>
+                        <constraint firstAttribute="height" constant="63" id="vdG-lM-ZhW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已预约成功！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Buy-Pg-Vec">
+                    <rect key="frame" x="133.5" y="120" width="107.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="现将详细信息告知：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Seq-km-AkC">
+                    <rect key="frame" x="40" y="168" width="129" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目：美白针套餐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI4-pY-QLB">
+                    <rect key="frame" x="40" y="210" width="322.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医生：张明" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JS-ar-IL2">
+                    <rect key="frame" x="40" y="236" width="322.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医院：苏州圣爱医院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGG-T6-48J">
+                    <rect key="frame" x="40" y="262" width="322.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：江苏省苏州市月亮湾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpJ-e1-fL1">
+                    <rect key="frame" x="40" y="288" width="322.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择时间：2016/10/26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzx-20-0IN">
+                    <rect key="frame" x="40" y="314" width="322.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号：183****0156" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNS-2a-bgu">
+                    <rect key="frame" x="40" y="340" width="322.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="身份证号：320504********1198" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iL3-vx-sJu">
+                    <rect key="frame" x="40" y="366" width="322.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jte-fa-KE0" userLabel="line">
+                    <rect key="frame" x="40" y="407" width="295" height="1"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.87450980392156863" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="UL8-oR-6TO"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请您于2017年3月28日上午9点前至医院门诊部" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bex-eW-weM">
+                    <rect key="frame" x="40" y="433" width="295" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约号：11000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6d-SA-Tiy">
+                    <rect key="frame" x="40" y="463" width="96" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Bex-eW-weM" firstAttribute="top" secondItem="jte-fa-KE0" secondAttribute="bottom" constant="25" id="1yW-cc-Bn0"/>
+                <constraint firstItem="4JS-ar-IL2" firstAttribute="trailing" secondItem="LI4-pY-QLB" secondAttribute="trailing" id="3kb-9g-xsb"/>
+                <constraint firstItem="Buy-Pg-Vec" firstAttribute="top" secondItem="kWv-iC-0LT" secondAttribute="bottom" constant="26" id="4xm-RF-R4q"/>
+                <constraint firstItem="iL3-vx-sJu" firstAttribute="top" secondItem="nNS-2a-bgu" secondAttribute="bottom" constant="10" id="54K-Tf-ySL"/>
+                <constraint firstItem="FGG-T6-48J" firstAttribute="leading" secondItem="4JS-ar-IL2" secondAttribute="leading" id="7x1-6W-1sR"/>
+                <constraint firstItem="a6d-SA-Tiy" firstAttribute="top" secondItem="Bex-eW-weM" secondAttribute="bottom" constant="13" id="9uT-bq-Hwn"/>
+                <constraint firstItem="FGG-T6-48J" firstAttribute="top" secondItem="4JS-ar-IL2" secondAttribute="bottom" constant="10" id="CSY-p8-nlF"/>
+                <constraint firstItem="kWv-iC-0LT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HmR-lp-RFb"/>
+                <constraint firstItem="hpJ-e1-fL1" firstAttribute="leading" secondItem="FGG-T6-48J" secondAttribute="leading" id="I62-yz-QdJ"/>
+                <constraint firstAttribute="trailing" secondItem="LI4-pY-QLB" secondAttribute="trailing" constant="12.5" id="JaO-ak-Y3j"/>
+                <constraint firstItem="4JS-ar-IL2" firstAttribute="top" secondItem="LI4-pY-QLB" secondAttribute="bottom" constant="10" id="Jmc-fh-5VH"/>
+                <constraint firstItem="iL3-vx-sJu" firstAttribute="leading" secondItem="nNS-2a-bgu" secondAttribute="leading" id="N2T-A1-aeZ"/>
+                <constraint firstItem="nNS-2a-bgu" firstAttribute="leading" secondItem="nzx-20-0IN" secondAttribute="leading" id="PBu-Fp-ype"/>
+                <constraint firstItem="4JS-ar-IL2" firstAttribute="leading" secondItem="LI4-pY-QLB" secondAttribute="leading" id="QEq-YV-3tc"/>
+                <constraint firstItem="Buy-Pg-Vec" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Rdd-Ft-dah"/>
+                <constraint firstItem="Bex-eW-weM" firstAttribute="trailing" secondItem="jte-fa-KE0" secondAttribute="trailing" id="UNo-Sn-a0m"/>
+                <constraint firstItem="LI4-pY-QLB" firstAttribute="top" secondItem="Seq-km-AkC" secondAttribute="bottom" constant="25" id="UkI-T0-u0u"/>
+                <constraint firstItem="nNS-2a-bgu" firstAttribute="top" secondItem="nzx-20-0IN" secondAttribute="bottom" constant="10" id="UqU-yG-nS8"/>
+                <constraint firstAttribute="trailing" secondItem="jte-fa-KE0" secondAttribute="trailing" constant="40" id="Ywh-yZ-cwD"/>
+                <constraint firstItem="a6d-SA-Tiy" firstAttribute="leading" secondItem="Bex-eW-weM" secondAttribute="leading" id="aVI-DM-22U"/>
+                <constraint firstItem="jte-fa-KE0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="bz6-cl-yzc"/>
+                <constraint firstItem="hpJ-e1-fL1" firstAttribute="top" secondItem="FGG-T6-48J" secondAttribute="bottom" constant="10" id="c4N-ge-4Bp"/>
+                <constraint firstItem="iL3-vx-sJu" firstAttribute="trailing" secondItem="nNS-2a-bgu" secondAttribute="trailing" id="h9I-vy-f8e"/>
+                <constraint firstItem="hpJ-e1-fL1" firstAttribute="trailing" secondItem="FGG-T6-48J" secondAttribute="trailing" id="huW-nd-FRw"/>
+                <constraint firstItem="nzx-20-0IN" firstAttribute="top" secondItem="hpJ-e1-fL1" secondAttribute="bottom" constant="10" id="kJw-hh-sqS"/>
+                <constraint firstItem="nNS-2a-bgu" firstAttribute="trailing" secondItem="nzx-20-0IN" secondAttribute="trailing" id="mXx-mO-IdR"/>
+                <constraint firstItem="FGG-T6-48J" firstAttribute="trailing" secondItem="4JS-ar-IL2" secondAttribute="trailing" id="mba-lG-cr3"/>
+                <constraint firstItem="nzx-20-0IN" firstAttribute="trailing" secondItem="hpJ-e1-fL1" secondAttribute="trailing" id="oSF-vw-kwn"/>
+                <constraint firstItem="kWv-iC-0LT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="p02-uF-QvM"/>
+                <constraint firstItem="jte-fa-KE0" firstAttribute="top" secondItem="iL3-vx-sJu" secondAttribute="bottom" constant="25" id="tJh-u3-ZrL"/>
+                <constraint firstItem="Bex-eW-weM" firstAttribute="leading" secondItem="jte-fa-KE0" secondAttribute="leading" id="tdE-Ui-OE8"/>
+                <constraint firstItem="Seq-km-AkC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="tit-if-kpI"/>
+                <constraint firstItem="nzx-20-0IN" firstAttribute="leading" secondItem="hpJ-e1-fL1" secondAttribute="leading" id="txy-U0-B2k"/>
+                <constraint firstItem="Seq-km-AkC" firstAttribute="top" secondItem="Buy-Pg-Vec" secondAttribute="bottom" constant="30" id="uG5-FV-07I"/>
+                <constraint firstItem="LI4-pY-QLB" firstAttribute="leading" secondItem="Seq-km-AkC" secondAttribute="leading" id="uJe-UQ-kWd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="news_icon_success" width="63" height="63"/>
+    </resources>
+</document>
